@@ -816,6 +816,8 @@ ul.slick-dots {
 	font-weight: 400;
 }
 
+/* Among Us Button */
+
 .more-info .right-content .amongUsButton{
 	display: flex;
   align-items: center;
@@ -873,6 +875,8 @@ ul.slick-dots {
   transform: translateX(200%);
   transition-delay: 300ms;
 }
+
+/* End of Among us button */
 
 /* About Page */
 
@@ -1580,6 +1584,26 @@ footer .contact-form #form-submit a{
 	/* margin-left: 70px; */
 }
 
+.event-button {
+  background: #FBCA1F;
+  font-family: inherit;
+  padding: 0.6em 1.3em;
+  font-weight: 900;
+  font-size: 18px;
+  border: 3px solid black;
+  border-radius: 0.4em;
+  box-shadow: 0.1em 0.1em;
+}
+
+.event-button:hover {
+  transform: translate(-0.05em, -0.05em);
+  box-shadow: 0.15em 0.15em;
+}
+
+.event-button:active {
+  transform: translate(0.05em, 0.05em);
+  box-shadow: 0.05em 0.05em;
+}
 
 /* Contact Information */
 
