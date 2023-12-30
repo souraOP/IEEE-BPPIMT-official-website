@@ -1,19 +1,21 @@
 //To change the cursor animation
 
-const cursor = document.querySelector('.cursor');
-document.addEventListener('mousemove', e => {
-    cursor.setAttribute("style", "top: "+(e.pageY - scrollY - 25)+"px; left: "+(e.pageX - scrollX - 25)+"px;")
-})
+function mouseCursorAnimation() {
+  const cursor = document.querySelector('.cursor');
+  document.addEventListener('mousemove', e => {
+      cursor.setAttribute("style", "top: "+(e.pageY - scrollY - 25)+"px; left: "+(e.pageX - scrollX - 25)+"px;")
+  })
+  
+  document.addEventListener('click', () => {
+      cursor.classList.add("expand");
+  
+      setTimeout(() => {
+          cursor.classList.remove("expand");
+      }, 500)
+  })
+}
 
-document.addEventListener('click', () => {
-    cursor.classList.add("expand");
-
-    setTimeout(() => {
-        cursor.classList.remove("expand");
-    }, 500)
-})
-
-
+mouseCursorAnimation();
 
 
 jQuery( document ).ready(function( $ ) {
